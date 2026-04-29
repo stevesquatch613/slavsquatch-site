@@ -18,17 +18,11 @@ export default function AboutPage() {
               <a href="/about" className="text-red-400">
                 About
               </a>
-              <a href="/process" className="hover:text-red-400">
-                Process
-              </a>
-              <a href="/contact" className="hover:text-red-400">
-                Contact
-              </a>
             </nav>
   
             <a
               href="/contact"
-              className="rounded-xl border border-red-500 px-6 py-3 text-base font-bold text-red-400 transition hover:bg-red-600 hover:text-white"
+              className="rounded-xl border border-red-500 px-4 py-2 text-sm font-bold text-red-400 md:px-6 md:py-3 md:text-base"
             >
               Contact Us
             </a>
