@@ -2,7 +2,7 @@ export default function AboutPage() {
     return (
       <main className="min-h-screen bg-[#050608] text-zinc-100">
         <section className="mx-auto max-w-7xl px-6 py-8">
-          <header className="flex items-center justify-between py-2">
+        <header className="flex flex-col gap-6 py-2 md:flex-row md:items-center md:justify-between">
             <a href="/" className="flex items-center gap-4">
               <img
                 src="/slavsquatch-logo.png"
@@ -11,7 +11,7 @@ export default function AboutPage() {
               />
             </a>
   
-            <nav className="hidden items-center gap-12 text-base font-semibold text-zinc-200 md:flex">
+            <nav className="flex items-center gap-4 text-sm font-semibold text-zinc-200 md:gap-12 md:text-base">
               <a href="/#services" className="hover:text-red-400">
                 Services
               </a>
