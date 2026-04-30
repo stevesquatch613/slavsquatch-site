@@ -10,24 +10,21 @@ export default function Home() {
     {
       title: "Custom Applications",
       text: "Purpose-built web applications designed around how your organization actually works.",
-      icon: "</>",
     },
     {
       title: "Process Automation",
       text: "Tools that reduce repetitive work, prevent handoff gaps, and keep tasks moving.",
-      icon: "⚙",
     },
     {
       title: "Reporting & Insights",
       text: "Dashboards and data tools that turn messy information into clear decisions.",
-      icon: "▮▮▮",
     },
   ];
 
   return (
     <main className="min-h-screen bg-[#050608] text-zinc-100">
       <section className="mx-auto max-w-7xl px-6 py-8">
-      <header className="flex flex-col gap-6 py-2 md:flex-row md:items-center md:justify-between">
+        <header className="flex flex-col gap-6 py-2 md:flex-row md:items-center md:justify-between">
           <div className="flex items-center gap-4">
             <img
               src="/slavsquatch-logo.png"
@@ -43,7 +40,7 @@ export default function Home() {
             <a href="/about" className="hover:text-red-400">
               About
             </a>
-                    </nav>
+          </nav>
 
           <a
             href="/contact"
@@ -137,16 +134,63 @@ export default function Home() {
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {services.map((service) => (
               <article
-              key={service.title}
-              className="rounded-3xl border border-red-900 bg-[#07090d] p-8"
-            >
-              <h3 className="text-2xl font-black text-white">
-  {service.title}
-</h3>
-            
-              <p className="mt-4 leading-7 text-zinc-300">{service.text}</p>
-            </article>
+                key={service.title}
+                className="rounded-3xl border border-red-900 bg-[#07090d] p-8"
+              >
+                <h3 className="text-2xl font-black text-white">
+                  {service.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-zinc-300">{service.text}</p>
+              </article>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-zinc-800 px-6 py-20">
+        <div className="mx-auto max-w-6xl">
+          <div className="text-center">
+            <h2 className="text-4xl font-black md:text-5xl">Example Work</h2>
+            <p className="mt-4 text-lg text-zinc-400">
+              Practical applications built around real workflows and outcomes.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2">
+            <div className="rounded-3xl border border-red-900 bg-zinc-950 p-8">
+              <h3 className="text-2xl font-black text-white">
+                WalliGo (In Development)
+              </h3>
+
+              <p className="mt-4 leading-7 text-zinc-300">
+                A mobile application that generates Apple Wallet destination
+                cards for travelers, helping users communicate locations clearly
+                across languages and regions.
+              </p>
+
+              <p className="mt-4 text-sm text-zinc-400">
+                Focus: Mobile UX, localization, real-world usability
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-red-900 bg-zinc-950 p-8">
+              <h3 className="text-2xl font-black text-white">
+                Classroom Workflow Platform (Concept)
+              </h3>
+
+              <p className="mt-4 leading-7 text-zinc-300">
+                A modern alternative to traditional learning management systems,
+                designed to help teachers and students manage assignments,
+                grades, feedback, classroom communication, and academic progress
+                in one connected workflow.
+              </p>
+
+              <p className="mt-4 text-sm text-zinc-400">
+                Focus: Education workflows, assignment tracking, grading, student
+                progress
+              </p>
+            </div>
           </div>
         </div>
       </section>
